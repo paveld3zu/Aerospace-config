@@ -108,4 +108,3 @@ run = ["layout tiling", "move-node-to-workspace Space_3"]
 [[on-window-detected]]
 if.app-id = "md.obsidian"
 run = ["layout tiling", "move-node-to-workspace Space_3"]
-
