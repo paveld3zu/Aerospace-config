@@ -49,7 +49,7 @@ alt-shift-equal = 'resize smart +50'
 alt-1 = 'workspace Space_1'
 alt-2 = 'workspace Space_2'
 alt-3 = 'workspace Space_3'
-alt-4 = 'workspace 4'
+alt-4 = 'workspace Space_4'
 alt-5 = 'workspace 5'
 alt-6 = 'workspace 6'
 alt-7 = 'workspace 7'
@@ -60,7 +60,7 @@ alt-0 = 'workspace Space_0'
 alt-shift-1 = 'move-node-to-workspace Space_1'
 alt-shift-2 = 'move-node-to-workspace Space_2'
 alt-shift-3 = 'move-node-to-workspace Space_3'
-alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-4 = 'move-node-to-workspace Space_4'
 alt-shift-5 = 'move-node-to-workspace 5'
 alt-shift-6 = 'move-node-to-workspace 6'
 alt-shift-7 = 'move-node-to-workspace 7'
@@ -102,9 +102,17 @@ if.app-id = "ru.yandex.desktop.yandex-browser"
 run = ["layout tiling", "move-node-to-workspace Space_2"]
 
 [[on-window-detected]]
+if.app-id = "md.obsidian"
+run = ["layout tiling", "move-node-to-workspace Space_3"]
+
+[[on-window-detected]]
 if.app-id = "ru.keepcoder.Telegram"
 run = ["layout tiling", "move-node-to-workspace Space_3"]
 
 [[on-window-detected]]
-if.app-id = "md.obsidian"
+if.app-id = "com.apple.mail"
 run = ["layout tiling", "move-node-to-workspace Space_3"]
+
+[[on-window-detected]]
+if.app-id = "com.parallels.desktop.console"
+run = "move-node-to-workspace Space_4"
